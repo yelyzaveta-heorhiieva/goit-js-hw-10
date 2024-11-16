@@ -1,5 +1,5 @@
-@import url('form-styles.css');
-@import url('gallery-styles.css');
+@import url('timer-styles.css');
+@import url('snackbar-styles.css');
 
 * {
   box-sizing: border-box;
