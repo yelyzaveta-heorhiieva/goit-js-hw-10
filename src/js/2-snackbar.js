@@ -31,8 +31,6 @@ form.addEventListener('submit', (event) => {
         delay: +delayInput.value,
     }
 
-    console.log(typeof obj.delay);
-
     makePromise(obj)
         .then(value => 
             iziToast.success({
