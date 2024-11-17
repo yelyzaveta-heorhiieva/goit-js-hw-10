@@ -22,7 +22,7 @@ const options = {
         if (selectedTime <= presentTime) {
           iziToast.error({
              backgroundColor: 'red',
-            iconUrl: '../icon.svg',
+            iconUrl: '../error.svg',
             theme: 'dark',
             overlay: true,
             position: 'topCenter',
