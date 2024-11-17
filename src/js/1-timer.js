@@ -2,14 +2,13 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import errorIcon from '../error.svg';
 
 let userSelectedDate;
 const startBtn = document.querySelector('button[data-start]');
 const input = document.querySelector('#datetime-picker')
 const span = document.querySelectorAll('.value');
-startBtn.setAttribute('disabled', '');
-    
-const errorIcon = '../error.svg'
+startBtn.setAttribute('disabled', '');   
 
 const options = {
   enableTime: true,

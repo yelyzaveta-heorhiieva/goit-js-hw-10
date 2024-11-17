@@ -1,5 +1,7 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import errorIcon from '../error.svg';
+import checkIcon from '../check.svg';
 
 const delayInput = document.querySelector('input[name="delay"]');
 const form = document.querySelector('form');
@@ -7,11 +9,6 @@ delayInput.step = 1000;
 delayInput.spellcheck = false;
 delayInput.min = 1000;
 delayInput.defaultValue = 1000;
-
-const checkIcon = '../check.svg';
-const errorIcon = '../error.svg'
-
-console.dir(delayInput)
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
