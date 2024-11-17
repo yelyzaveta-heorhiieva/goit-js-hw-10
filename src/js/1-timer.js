@@ -9,6 +9,7 @@ const input = document.querySelector('#datetime-picker')
 const span = document.querySelectorAll('.value');
 startBtn.setAttribute('disabled', '');
     
+const errorIcon = '../error.svg'
 
 const options = {
   enableTime: true,
@@ -22,7 +23,7 @@ const options = {
         if (selectedTime <= presentTime) {
           iziToast.error({
              backgroundColor: 'red',
-            iconUrl: '../error.svg',
+            iconUrl: errorIcon,
             theme: 'dark',
             overlay: true,
             position: 'topCenter',

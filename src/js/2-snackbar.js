@@ -8,6 +8,9 @@ delayInput.spellcheck = false;
 delayInput.min = 1000;
 delayInput.defaultValue = 1000;
 
+const checkIcon = '../check.svg';
+const errorIcon = '../error.svg'
+
 console.dir(delayInput)
 
 form.addEventListener('submit', (event) => {
@@ -37,7 +40,7 @@ form.addEventListener('submit', (event) => {
         .then(value => 
             iziToast.success({
             backgroundColor: 'green',
-            iconUrl: '../check.svg',
+            iconUrl: checkIcon,
             theme: 'dark',
             overlay: false,
             position: 'topCenter',
@@ -51,7 +54,7 @@ form.addEventListener('submit', (event) => {
         .catch(error =>
             iziToast.error({
             backgroundColor: 'red',
-            iconUrl: '../error.svg',
+            iconUrl: errorIcon,
             theme: 'dark',
             overlay: false,
             position: 'topCenter',
